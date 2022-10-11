@@ -21,4 +21,12 @@ User.init(
             allowNull: false,
         },
     },
-)
+    {
+        sequelize,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'users',
+    }
+);
+
+module.exports = User;
